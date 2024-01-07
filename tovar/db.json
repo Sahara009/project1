@@ -1,0 +1,41 @@
+[
+ 
+    {
+      "id":1,
+      "photo": "./catalog/ef48ad90-716e-4c36-82e8-e33f7de6b9e2.webp",
+      "name": "Ноутбук Huawei MateBook D 15 BoDe-WDH9 53013WRP, 15.6, IPS, Intel Core i5 1155G7 2.5ГГц, 4-ядерный, 8ГБ DDR4, 512ГБ SSD, Intel Iris Xe graphics , без операционной системы, серый космос",
+      "price": 39000,
+      "harak":"Ноутбук DEXP Aquilon оборудован сенсорным NumPad, который упрощает ввод числовой информации. Осуществляйте навигацию между несколькими окнами и не отказывайтесь от использования требовательных приложений. Высокую скорость работы будет поддерживать 2-ядерный процессор Intel Celeron N4020. Видеокарта Intel UHD Graphics 600 улучшит качество графики при обработке материалов в редакторах.Ноутбуку DEXP Aquilon вы доверите трансляцию кинолент и роликов. Экран диагональю 14.1 дюйм сконструирован по технологии IPS. Ее основная задача заключается в усилении контрастности изображений и расширении углов обзора. Синхронизация внешней периферии займет не более нескольких минут. Достаточно воспользоваться интерфейсом Bluetooth 4.2. Ускорить передачу файлов с накопителя позволит разъем USB 3.2."
+    },
+    {
+      "photo": "./catalog/ef48ad90-716e-4c36-82e8-e33f7de6b9e2.webp",
+      "name": "Ноутбук Huawei MateBook D 16 53013TPC, 16, IPS, Intel Core i5 12450H 2ГГц, 8-ядерный, 16ГБ LPDDR4x, 512ГБ SSD, Intel UHD Graphics , без операционной системы, серый космос",
+      "price": 15000
+    },
+    {
+      "photo": "https://cdn.citilink.ru/yYmNA4CSqdyv0c_E7cb0_NYtCCI8lti8fLATriKITV0/resizing_type:fit/gravity:sm/width:400/height:400/plain/product-images/f2f735d3-29df-40e0-96b5-5a81d1d554b9.jpg",
+      "name": "Ноутбук Digma Pro Sprint M DN16R5-ADXW01, 16.1, IPS, AMD Ryzen 5 3500U 2.1ГГц, 4-ядерный, 16ГБ DDR4, 512ГБ SSD, AMD Radeon RX Vega 8, Windows 11 Professional, серебристый",
+      "price": 78000
+    },
+    {
+      "photo": "https://cdn.citilink.ru/yYmNA4CSqdyv0c_E7cb0_NYtCCI8lti8fLATriKITV0/resizing_type:fit/gravity:sm/width:400/height:400/plain/product-images/f2f735d3-29df-40e0-96b5-5a81d1d554b9.jpg",
+      "name": "Ноутбук Digma Pro Sprint M DN16R5-ADXW01, 16.1, IPS, AMD Ryzen 5 3500U 2.1ГГц, 4-ядерный, 16ГБ DDR4, 512ГБ SSD, AMD Radeon RX Vega 8, Windows 11 Professional, серебристый",
+      "price": 78000
+    },
+    {
+      "photo": "https://cdn.citilink.ru/yYmNA4CSqdyv0c_E7cb0_NYtCCI8lti8fLATriKITV0/resizing_type:fit/gravity:sm/width:400/height:400/plain/product-images/f2f735d3-29df-40e0-96b5-5a81d1d554b9.jpg",
+      "name": "Ноутбук Digma Pro Sprint M DN16R5-ADXW01, 16.1, IPS, AMD Ryzen 5 3500U 2.1ГГц, 4-ядерный, 16ГБ DDR4, 512ГБ SSD, AMD Radeon RX Vega 8, Windows 11 Professional, серебристый",
+      "price": 78000
+    },
+    {
+      "photo": "https://cdn.citilink.ru/yYmNA4CSqdyv0c_E7cb0_NYtCCI8lti8fLATriKITV0/resizing_type:fit/gravity:sm/width:400/height:400/plain/product-images/f2f735d3-29df-40e0-96b5-5a81d1d554b9.jpg",
+      "name": "Ноутбук Digma Pro Sprint M DN16R5-ADXW01, 16.1, IPS, AMD Ryzen 5 3500U 2.1ГГц, 4-ядерный, 16ГБ DDR4, 512ГБ SSD, AMD Radeon RX Vega 8, Windows 11 Professional, серебристый",
+      "price": 78000
+    },
+    {
+      "photo": "https://cdn.citilink.ru/yYmNA4CSqdyv0c_E7cb0_NYtCCI8lti8fLATriKITV0/resizing_type:fit/gravity:sm/width:400/height:400/plain/product-images/f2f735d3-29df-40e0-96b5-5a81d1d554b9.jpg",
+      "name": "Ноутбук Digma Pro Sprint M DN16R5-ADXW01, 16.1, IPS, AMD Ryzen 5 3500U 2.1ГГц, 4-ядерный, 16ГБ DDR4, 512ГБ SSD, AMD Radeon RX Vega 8, Windows 11 Professional, серебристый",
+      "price": 1000
+    }
+    
+  ]

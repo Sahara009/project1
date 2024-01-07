@@ -1,0 +1,396 @@
+@media(max-width:1330px) {
+    .container {
+        width: 1100px;
+        margin: 0 auto;
+    }
+    .column_2 {
+        display: none;
+    }
+    .grid-container {
+        display: flex;
+        gap: 0px;
+        justify-content: space-around;
+    }
+    /* .card_1 {
+        height: 485px;
+    } */
+    .product-card img {
+        padding: 0;
+    }
+    .slider {
+       height: 400px;
+    }
+    .content-titles img {
+        width: 497px;
+        height: 400px;
+    }
+    .content-titles h1 {
+        font-size: 49px;
+        font-weight: 500;
+        line-height: 49.6px;
+        margin-bottom: 15px;
+    }
+    .content-titles p {
+        margin-bottom: 25px;
+    }
+    
+}
+@media(max-width:1130px) {
+    .container {
+        width: 995px;
+        margin: 0 auto;
+    }
+    .card-titles {
+        padding: 25px 60px 20px;
+    }
+    .container-email {
+        padding: 0 158px;
+    }
+    #product-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 15px;
+    }
+    .product-card img {
+        padding: 30px;
+    }
+    .footer-logo {
+        padding-right: 70px;
+    }
+    
+}
+@media(max-width:1025px) {
+    .container {
+        width: 800px;
+        margin: 0 auto;
+    }
+    .explore-line {
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+       gap: 15px;
+    }
+    .journal-line {
+        flex-direction: column;
+    }
+    .journal-img {
+        text-align: center;
+    }
+    .journal-notes {
+        margin: 0 auto;
+    }
+    .footer-logo {
+        padding-right: 15px;
+    }
+    .card_1 img{
+        width: 401px;
+        height: 278px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .card_1 {
+        width: 510px;
+        height: 394px;
+    }
+    .card_2 img{
+        width: 290px;
+        height: 176px;
+    }
+    .card_2 {
+        height: 176px;
+        width: 510px;
+    }
+    .column_1 {
+        width: 199px;
+    }
+    
+    .column-1-title {
+        padding: 0 5px;
+    }
+    .content-titles h1 {
+        font-size: 35px;
+        line-height: 35.6px;
+    }
+    .content-titles p {
+        font-size: 14px;
+    }
+    .content-titles img {
+        width: 488px;
+        height: 390px;
+    }
+    .title {
+        position: absolute;
+    }
+    .content-img {
+        padding-left: 200px;
+    }
+    .slider {
+        height: 333px;
+    }
+    .title {
+        width: 50%;
+    }
+    .content-titles img {
+        width: 430px;
+        height: 330px;
+    }
+    .content-img {
+        padding-left: 270px;
+    }
+}
+@media(max-width:830px) {
+    .container {
+        width: 700px;
+        margin: 0 auto;
+    }
+    .footer-line {
+        column-gap: 25px;
+        justify-content: start;
+    }
+    .container-email {
+        padding: 0 50px;
+    }
+    .assortment-see-all {
+        display: flex;
+    }
+    .column_1 {
+        display: none;
+    }
+    .grid-container {
+        justify-content: center;
+    }
+    .header-menu {
+        display: none;
+    }
+    .header-purchases {
+        display: none;
+    }
+    .header-burger_menu {
+        display: flex;
+    }
+    .first-column {
+        row-gap: 32px;
+    }
+    .footer-logo {
+       width: 100%;
+    }
+    .footer-line {
+        row-gap: 20px;
+        padding-bottom: 10px;
+    }
+    .content-img {
+        padding-left: 130px;
+    }
+    .content-titles button {
+        padding: 10px 33px;
+    }
+    .content-titles h1 {
+        font-size: 29px;
+        line-height: 35.6px;
+    }
+    .content-titles p {
+       color: rgb(40, 40, 40);
+    }
+    .content-img {
+        padding-left: 143px;
+    }
+}
+@media(max-width:715px) {
+    .container {
+        width: 600px;
+        margin: 0 auto;
+    }
+    #product-container {
+        grid-template-columns: 1fr;
+    }
+    .journal-img img{
+        width: 520px;
+        height: 320px;
+    }
+    .input-container input {
+        min-width: 495px;
+    }
+    .content-titles p {
+        margin-bottom: 15px;
+    }
+    .content-titles img {
+        width: 428px;
+        height: 330px;
+    }
+    .content-titles h1 {
+        margin-top: -1px;
+    }
+    .content-titles h1 {
+        font-size: 27px;
+        line-height: 35.6px;
+    }
+    .content-titles p {
+        font-size: 12px;
+    }
+    .content-titles button {
+        padding: 6px 20px;
+    }
+    .content-titles button {
+        font-size: 15px;
+    }
+    .slider {
+        height: 295px;
+    }
+    .content-titles img {
+        width: 408px;
+        height: 310px;
+    }
+    .left-arrow {
+        left: 10px;
+    }
+    .right-arrow {
+        right: 10px;
+    }
+    .content-titles {
+        padding-left: 45px;
+    }
+}
+@media(max-width:660px) {
+    .content-titles img {
+        width: 388px;
+        height: 290px;
+    }
+    .slider {
+        height: 274px;
+    }
+}
+@media(max-width:615px) {
+    .container {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .journal-img img{
+        width: 460px;
+        height: 260px;
+    }
+    .input-container input {
+        min-width: 420px;
+    }
+    .container-email {
+        padding: 0 30px;
+    }
+    .grid-container {
+        display: none;
+    }
+    .grid-container_media {
+        display: grid;
+    }
+    .content-titles p {
+        display: none;
+    }
+    .title {
+        width: 60%;
+    }
+    .content-titles img {
+        width: 368px;
+        height: 270px;
+    }
+    .content-img {
+        padding-left: 95px;
+    }
+    .slider {
+        height: 259px;
+    }
+}
+@media(max-width:530px) {
+    .container {
+        width: 430px;
+        margin: 0 auto;
+    }
+    .card_1 {
+        width: 640px;
+        height: 344px;
+    }
+    .journal-img img{
+        width: 420px;
+        height: 220px;
+    }
+    .grid-container_media {
+        display: grid;
+    }
+    .email-input {
+        width: 211px;
+    }
+    .email-titles {
+        padding: 0 5px;
+    }
+    .email-titles h4 {
+        font-size: 35px;
+    }
+    .email-titles p {
+        font-size: 14px;
+    }
+    .slider {
+        height: 236px;
+    }
+    .content-titles img {
+        width: 348px;
+        height: 250px;
+    }
+    .content-img {
+        padding-left: 0px;
+    }
+    .title {
+        width: 80%;
+        text-align: center;
+        padding-left: 10px;
+    }
+    .content-titles h1 {
+       color: rgb(20, 20, 20);
+       margin-top: -20px;
+       background-color: #ffffff48;
+       border-radius: 3px;
+    }
+    .content-titles button {
+        color: white;
+        border: 1px solid #fff;
+    }
+}
+@media(max-width:450px) {
+    .container {
+        width: 370px;
+        margin: 0 auto;
+    }
+    .journal-img img {
+        width: 360px;
+        height: 160px;
+    }
+    .input-container input {
+        min-width: 330px;
+    }
+    .journal-more {
+        margin-top: 22px;
+    }
+    .footer-authors p {
+        font-size: 12px;
+    }
+    .footer-authors a {
+        font-size: 12px;
+    }
+    .footer-authors img {
+        width: 18px;
+        height: 18px;
+        margin-top: 3px;
+    }
+    .assortment-titles h2 {
+        font-size: 35px;
+    }
+    .assortment-titles {
+        padding: 48px 0 20px;
+    }
+    .footer-line {
+        justify-content: center;
+    }
+    .journal-notes p {
+        font-size: 20px;
+    }
+    .bubbles {
+        gap: 6px;
+    }
+}
