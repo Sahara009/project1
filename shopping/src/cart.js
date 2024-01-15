@@ -22,6 +22,7 @@ let generateCartItems = () => {
             let { id, item } = x
             //сопоставить айди из корзины с shopItemsData
             let search = shopItemsData.find((y)=> y.id === id) || []
+            
             // резервнуая копия товаров
             return `
             <div class="card-item">
@@ -31,9 +32,9 @@ let generateCartItems = () => {
                 <div class="title-price-x">
                     <h4 class="title-price">
                     <p>${search.name}</p>
-                    <p class="cart-item-price">${search.price}₽</p>
+                    <p class="cart-item-price">${search.price}</p>
                     </h4>
-                    <i class="bi bi-x-lg"></i>
+                    <i onclick='removeItem(${id})' class="bi bi-x-lg"></i>
 
                     <div class="cart-buttons">
 
@@ -43,13 +44,13 @@ let generateCartItems = () => {
 
                     </div>
                     <!-- кол-во товара умножить на цену единицы товара -->
-                <h3>${item * search.price} ₽</h3>
+                <h3>${item * search.price}</h3>
             </div>
             </div>
             `
         }).join('')
     } else {
-        // shoppingCart.innerHTML = ``
+        shoppingCart.innerHTML = ``
         label.innerHTML = `
         <h2>Корзина пуста как твой кошелек</h2>
         <a href="index.html">
@@ -66,21 +67,21 @@ const increment = (id) => {
      // поиск = ищем все существующие товары в корзине
     // eсли товар с указанным id найден, его данные будут сохранены в переменной search
     let search = basket.find((x) => x.id === selectedItem);
-  
+    
     // если товара нет то добавь в корзину его id(что б различать их) и кол-во
-    if (search === undefined) {
-      basket.push({
-        id: selectedItem,
-        item: 1,
-      });
-    } else {
+    // if (search === undefined) {
+    //   basket.push({
+    //     id: selectedItem,
+    //     item: 1,
+    //   });
+    // } else {
          // либо добавь еще
       search.item += 1;
-    }
+    // }
   
      // что бы при нажатии число менялось сразу же после клика
     // в аргументах id выбранного товара
-    IncreaseProduct(selectedItem);
+    IncreaseProduct(selectedItem.id);
     // вставляем для обновления общей цены
     generateCartItems()
     // 1 - добавление товара в локал в нужном формате в корзину
@@ -100,6 +101,7 @@ const decrement = (id) => {
         // либо уменьшить текущее
       search.item -= 1;
     }
+    
   
     // что бы при нажатии число менялось сразу же после клика
     // в аргументах id выбранного товара
@@ -117,6 +119,7 @@ const IncreaseProduct = (id) => {
     let search = basket.find((x) => x.id === id);
     // достаем число кол-во товара 
     let quantityElement = document.getElementById(`quantity-${id}`);
+  
 
      // кол-во товара > true сделать кол-во основанное на search.item либо 0
     if (quantityElement) {
@@ -124,5 +127,43 @@ const IncreaseProduct = (id) => {
     }
       // что бы при смене числа на карточке в корзине тоже сразу менялось
     calculationBasket();
+    totalPrice()
 };
 
+const removeItem = (id) => {
+    let selectedItem = id;
+    // вставляем в корзину только те элементы у которых id не равно выбранному id товара
+    basket = basket.filter((x)=> x.id !== selectedItem)
+    // обновляет карточки
+    generateCartItems();
+    // обвноляет локал
+    localStorage.setItem("data", JSON.stringify(basket));
+}
+
+// Функция для отображения общей стоимости товаров в корзине
+const totalPrice = () => {
+    // Проверка, есть ли товары в корзине
+    if (basket.length !== 0) {
+        // Используем метод map для создания массива цен каждого товара в корзине
+        let total = basket.map((x) => {
+            // Деструктуризация объекта для получения id и количества товара
+            let { id, item } = x;
+            // Поиск товара по id в массиве shopItemsData
+            let search = shopItemsData.find((y) => y.id === id) || [];
+
+            // Возвращаем стоимость товара (количество * цена)
+            return item * search.price;
+        }).reduce((x, nextNumber) => x + nextNumber, 0); // Используем метод reduce для сложения всех цен в массиве
+
+        // Обновление содержимого элемента с id 'label' с общей стоимостью
+        label.innerHTML = `
+            <h2>Общая стоимость: ${total}</h2>
+        `;
+    } else {
+        // Если корзина пуста, ничего не отображаем
+        return;
+    }
+}
+
+// Вызываем функцию для отображения общей стоимости
+totalPrice();

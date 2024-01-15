@@ -14,7 +14,7 @@ function createProductCard(product) {
     description.textContent = product.description;
 
     const price = document.createElement('p');
-    price.textContent = `$ ${product.price}`;
+    price.textContent = `${product.price}`;
 
     card.appendChild(image);
     card.appendChild(title);
@@ -26,10 +26,10 @@ function createProductCard(product) {
 
 // Пример продуктов (замени на свои данные)
 const productsData = [
-    { name: 'MacBook Pro 13', price: '1,200.00 USD', imageSrc: 'img/cards/1.png', description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet' },
-    { name: 'Smart Galaxy Watch 3', price: '199.00 USD', imageSrc: 'img/cards/2.png', description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...' },
-    { name: 'MacBook Air M1', price: '1,009.00 USD', imageSrc: 'img/cards/3.png', description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...' },
-    { name: 'iPad', price: '610.00 USD', imageSrc: 'img/cards/4.png', description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...' },
+    { name: 'MacBook Pro 13', price: '1,200.00 ', imageSrc: 'img/cards/1.png', description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet' },
+    { name: 'Smart Galaxy Watch 3', price: '199.00 ', imageSrc: 'img/cards/2.png', description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...' },
+    { name: 'MacBook Air M1', price: '1,009.00 ', imageSrc: 'img/cards/3.png', description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...' },
+    { name: 'iPad', price: '610.00 ', imageSrc: 'img/cards/4.png', description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...' },
     // Добавь больше продуктов
 ];
 
